@@ -1,0 +1,54 @@
+class Company {
+    var name: String
+    var date: Int
+    var headOffice: String
+    var founders: [String]
+
+    init(name: String, date: Int, headOffice: String, founders: [String] ) {
+        self.name = name
+        self.date = date
+        self.headOffice = headOffice
+        self.founders = founders
+    }
+    
+  func printit() {
+           print(self.name)
+           print(self.date)
+           print(self.headOffice)
+           print(self.founders)
+          }
+          
+}
+
+class Facebook: Company {
+    init() {
+        super.init(name: "Facebook", date: 2004, headOffice: "Menlo Park, California", founders: ["Mark Zuckerberg", "Steve Wozniak", "Ronald Wayne"])
+    }
+}
+class Apple: Company {
+    init() {
+        super.init(name: "Apple", date: 1976, headOffice: "Cupertino, California", founders: ["Steve Jobs", "Steve Wozniak", "Ronald Wayne"])
+    }
+}
+
+class Google: Company {
+    init() {
+        super.init(name: "Google", date: 1998, headOffice: "Mountain View, California", founders: ["Larry Page", "Sergey Brin"])
+    }
+}
+
+
+
+    var facebook = Facebook()
+         facebook.printit()
+         print(" ")
+         
+    var apple = Apple()
+        apple.printit()
+        print(" ")
+       
+    var google = Google()
+        google.printit()
+        print(" ")
+    
+       
